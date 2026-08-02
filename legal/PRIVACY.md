@@ -1,19 +1,23 @@
 # GetUply Privacy Policy
 
-**Effective date: July 19, 2026**
+**Effective date: August 2, 2026**
 
 GetUply ("the app") is an alarm clock app for iOS developed by Mustafa Cerit
 ("we", "us"). This policy explains what data the app handles and how. The short
-version: **GetUply has no accounts, no analytics, no ads, and your data stays
-on your device.**
+version: **GetUply has no accounts, no ads, and no cross-app tracking. Your
+alarms, mission data, photos, and statistics stay on your device. Apple and
+RevenueCat process subscription purchase history only to provide and analyze
+GetUply Pro access.**
 
 ## Data we do NOT collect
 
 - We do not require or offer any account or sign-up.
 - We do not collect names, email addresses, phone numbers, or contacts.
-- We do not use analytics, advertising, or tracking SDKs of any kind.
-- We do not sell, rent, or share any personal data with anyone.
-- We have no servers that receive your personal data.
+- We do not use advertising SDKs, behavioral analytics SDKs, or cross-app tracking.
+- We do not sell or rent personal data.
+- We have no first-party server that receives your alarm, mission, photo, or
+  wake-statistics data. RevenueCat processes the limited subscription data
+  described below as our service provider.
 
 ## Data stored only on your device
 
@@ -46,12 +50,20 @@ optional unless you use that feature:
   to restrict distracting apps during a mission. This is enforced by iOS; we
   never see which apps you use.
 
-## Purchases
+## Purchases and RevenueCat
 
-GetUply Pro subscriptions are processed entirely by Apple through your Apple
-ID. We never see or store your payment details. Apple's handling of purchase
-data is described in Apple's privacy policy. You can manage or cancel the
-subscription in your Apple ID settings.
+GetUply Pro payments are processed by Apple through your Apple ID. We never
+receive or store your payment-card details. The app uses RevenueCat as a service
+provider to validate App Store receipts, manage the anonymous Pro entitlement,
+and provide subscription analytics.
+
+RevenueCat receives purchase and subscription history, an anonymous app-user
+identifier, and limited device/app technical information required to operate
+that service. We do not assign a name, email address, or other account identity
+to that identifier. This information is used for app functionality and
+subscription analytics, not advertising or cross-app tracking. See
+[RevenueCat's privacy policy](https://www.revenuecat.com/privacy) for details.
+You can manage or cancel the subscription in your Apple ID settings.
 
 ## Content downloads
 
@@ -73,4 +85,4 @@ address with a new effective date.
 
 ## Contact
 
-Questions about privacy: **mustafacrit@gmail.com**
+Support and privacy questions: **mustafacrit@gmail.com**
