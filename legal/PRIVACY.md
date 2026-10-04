@@ -1,6 +1,6 @@
 # GetUply Privacy Policy
 
-**Effective date: August 2, 2026**
+**Effective date: October 4, 2026**
 
 GetUply ("the app") is an alarm clock app for iOS developed by Mustafa Cerit
 ("we", "us"). This policy explains what data the app handles and how. The short
@@ -39,8 +39,9 @@ Each permission is used only for the feature named, processed on device, and
 optional unless you use that feature:
 
 - **Notifications** — ringing your alarms and wake-mission reminders.
-- **Camera** — scanning QR codes / barcodes and verifying photo missions.
-  Images are analyzed on device and are not uploaded.
+- **Camera** — scanning QR codes / barcodes, verifying photo missions, and
+  counting push-up or squat repetitions. Images are analyzed on device and
+  are not uploaded.
 - **Motion & Fitness** — counting steps or shakes for movement missions.
 - **Speech Recognition / Microphone** — voice missions; recognition runs on
   device where iOS supports it.

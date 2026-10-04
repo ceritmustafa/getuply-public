@@ -264,8 +264,10 @@ you — an unfinished mission is not a dismissed alarm.
 **Snooze** is per-alarm: on or off, the interval in minutes, and a maximum number
 of snoozes. When you've used them all, the button goes away.
 
-**Strict mode** (Settings › Alarm behavior, with a per-alarm override) removes
-snooze entirely. The mission is the way out.
+**Strict mode** (Settings › Alarm behavior, with a per-alarm override) keeps the
+mission required. If you explicitly enable **Allow snooze** for that alarm and
+have snoozes left, you can snooze even in Strict mode. Snoozing pauses the alarm
+for the chosen interval; it does not complete the mission.
 
 **Emergency stop** is the escape hatch: press and hold for three seconds to
 dismiss an alarm without finishing the mission. It is limited to **three uses per

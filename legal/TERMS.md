@@ -1,6 +1,6 @@
 # GetUply Terms of Service
 
-**Effective date: July 19, 2026**
+**Effective date: October 4, 2026**
 
 These terms govern your use of the GetUply iOS app ("the app"), developed by
 Mustafa Cerit ("we", "us"). By downloading or using the app you agree to them.
@@ -40,8 +40,10 @@ being dismissed.
 - Movement missions (steps, push-ups, squats, shaking) are simple wake-up
   activities, not medical or fitness guidance. Perform them only if they are
   safe for you.
-- The alarm is designed to be loud and to restore volume during a mission.
-  Keep the device away from your ear when an alarm may ring.
+- When in-app alarm playback starts, GetUply raises system volume once if it
+  is below 85%. It does not keep restoring the volume during the mission;
+  the volume buttons remain usable. Keep the device away from your ear when
+  an alarm may ring.
 
 ## 4. GetUply Pro subscription
 
