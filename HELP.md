@@ -47,8 +47,11 @@ The first run walks you through the app in a few steps:
 1. **What GetUply does** — three short pages explaining missions.
 2. **Your wake time** — pick a time, or tap one of the quick choices.
 3. **Your first mission** — choose how you want to be made to get up.
-4. **Notifications** — GetUply asks for permission here. *An alarm cannot reach
-   you without it.*
+4. **Permissions** — each explanation has one **Continue** button that opens
+   the iOS request. Choose allow or deny in the system dialog; either decision
+   lets setup continue. Notifications support reminders and backup alerts;
+   AlarmKit has a separate permission for native Lock Screen alarms. Camera,
+   Motion & Fitness, Microphone/Speech and Screen Time serve their named features.
 5. **A practice run** — a real mission, right then, with no alarm attached, so the
    first time you do one isn't at 6 a.m.
 
@@ -395,7 +398,8 @@ type "vibrate", "dark", "delete" and it will get you there.
 
 | Permission | Needed for | Without it |
 |---|---|---|
-| **Notifications** | Every alarm | **No alarm can reach you.** This one is not optional. |
+| **Notifications** | Alarm reminders and backup alerts | Notification reminders/backups are unavailable. Native AlarmKit has its own permission. |
+| **Alarms (AlarmKit)** | Native Lock Screen alarms | Native alerts are unavailable; notification fallback needs notification permission. |
 | **Camera** | QR, barcode, photo, push-up and squat missions | Those missions can't run. |
 | **Motion & Fitness** | Steps mission | Steps can't be counted. |
 | **Microphone** | Voice mission | The mission can't hear you. |
@@ -405,8 +409,9 @@ type "vibrate", "dark", "delete" and it will get you there.
 
 iOS only shows each permission prompt once. If you said no and changed your mind,
 **Settings › Permissions › Open iOS Settings** takes you straight to GetUply's
-switches. Denying any permission other than notifications never blocks the rest of
-the app.
+switches. Denying a permission does not block setup or the rest of the app; it
+makes the dependent mission or alert path unavailable. AlarmKit and notification
+permissions are separate.
 
 ---
 
@@ -446,8 +451,9 @@ the default wake screen.
 - Alternative app icons
 
 Pro is an auto-renewing subscription, available weekly, monthly or yearly, with a
-free trial on the monthly and yearly plans. It's billed by Apple through your App
-Store account.
+free trial on the monthly and yearly plans when eligible. Each plan includes the
+same Pro features while the subscription is active. It's billed by Apple through
+your App Store account.
 
 - **Manage or cancel:** Settings › Account › *Manage in App Store*, or iOS
   Settings › your name › Subscriptions.
@@ -483,8 +489,9 @@ Full text: [Privacy Policy](legal/PRIVACY.md) · [Terms of Use](legal/TERMS.md)
 
 Work down this list:
 
-1. **Notifications.** Settings › Permissions. If it says *Denied*, nothing else
-   matters — fix that first.
+1. **Alarm permissions.** Check System alarm permission and Notifications
+   separately in Settings. Native alarms and notification backups use different
+   permissions; grant the one needed for your alert path in iOS Settings.
 2. **System alarm.** Settings › Alarm behavior › *System alarm*. On is the
    reliable path: it rings on the Lock Screen with the app closed.
 3. **Alarm protection.** Settings › Alarm protection runs a check and reports any
